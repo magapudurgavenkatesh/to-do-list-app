@@ -14,6 +14,7 @@ body{
     width:90%;
     max-width:500px;
     color:white;
+    margin: auto;
 
 }
 #taskInput{
@@ -30,6 +31,7 @@ h1{
 
 .input-section{
     display:flex;
+    flex-wrap: wrap;
     gap:12px;
     align-items: center;
 }
@@ -37,6 +39,7 @@ input{
     flex:1;
     padding:10px;
     border-radius:6px;
+    min-width: 120px;
     border:none;
 }
 button{
@@ -90,4 +93,13 @@ li button:hover{
 }
 .edit-btn:hover{
     background:#3d8085;
+}
+@media (max-width: 500px) {
+    .input-section {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
 }
